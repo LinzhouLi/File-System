@@ -39,12 +39,12 @@ void Category::FreeCategory(Node* node)
 {
     if(node == nullptr) return;
 
-    if(node->firstChild != nullptr)
+    if(node->firstChild != nullptr) // 递归删除子结点
     {
         FreeCategory(node->firstChild);
         node->firstChild = nullptr;
     }
-    if(node->nextBrother != nullptr)
+    if(node->nextBrother != nullptr) // 递归删除右兄弟结点
     {
         FreeCategory(node->nextBrother);
         node->nextBrother = nullptr;

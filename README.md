@@ -5,6 +5,7 @@
 - 点击`File_System.exe`启动时，须保证`log`文件夹**与`File_System.exe`在同一目录中**。
 - 通过Qt Creator运行调试时，须保证`log`文件夹在**生成的可执行文件的上一级目录中**（即与生成的`debug`或`release`文件夹在同一目录下）。
 - 如果`log`文件夹丢失，可从`src`文件夹中重新拷贝获得。
+- 读写文件时尽量不要使用中文。
 
 ## 项目需求
 
@@ -119,7 +120,7 @@ D:.
 
 - 在左侧文件目录树中，选中某级文件夹后鼠标右键打开菜单，选择`Add new folder`（此方式仅能新建文件夹）。
 
-  <img src="images\WhiteSpace.png" width=400>
+  <img src="images\WhiteSpace.png" width=600>
 
 **注意：同一目录下，文件夹或文件不能重名！**
 
@@ -154,3 +155,9 @@ D:.
 
 <img src = "images\saveLog.png" width = 600>
 
+## 待优化
+
+1. 编码：支持中文。
+2. 多线程：可打开多个编辑器窗口。
+3. 布局：支持动态大小的窗口布局。
+4. 文件或文件夹重名功能。
