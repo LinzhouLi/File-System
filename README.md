@@ -117,10 +117,9 @@ D:.
 ### 新建文件或文件夹
 
 - 在右侧文件列表空白处（如下图红框所示），鼠标右键打开菜单，并选择`Add new file`或`Add new folder`。
-
 - 在左侧文件目录树中，选中某级文件夹后鼠标右键打开菜单，选择`Add new folder`（此方式仅能新建文件夹）。
 
-  <img src="images\WhiteSpace.png" width=600>
+<img src="images\WhiteSpace.png" width=600>
 
 **注意：同一目录下，文件夹或文件不能重名！**
 
