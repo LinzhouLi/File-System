@@ -155,7 +155,7 @@ void Category::Format()
 bool Category::ReadLog()
 {
     // 读Json文件
-    QFile file("log/CategoryLog.json");
+    QFile file("CategoryLog.json");
     if(!file.open(QIODevice::Text | QIODevice::ReadOnly)) // 文件读取错误
         return false;
     QJsonParseError err; // 错误标识
@@ -232,7 +232,7 @@ bool Category::WriteLog()
     QJsonDocument doc;
     doc.setObject(obj);
 
-    QFile file("log/CategoryLog.json");
+    QFile file("CategoryLog.json");
     if(!file.open(QIODevice::Text | QIODevice::WriteOnly | QIODevice::Truncate))
         return false;
     QTextStream fstream(&file);

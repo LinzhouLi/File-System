@@ -131,7 +131,7 @@ bool VirtualDisk::UpdateFileContent(FCB* fcb, const QString& content)
 bool VirtualDisk::ReadLog()
 {
     // 读Json文件
-    QFile file("log/Disk.json");
+    QFile file("Disk.json");
     if(!file.open(QIODevice::Text | QIODevice::ReadOnly)) // 文件读取错误
         return false;
     QJsonParseError err; // 错误标识
@@ -163,7 +163,7 @@ bool VirtualDisk::ReadLog()
 bool VirtualDisk::WriteLog()
 {
     // 打开JSON文件
-    QFile file("log/Disk.json");
+    QFile file("Disk.json");
     if(!file.open(QIODevice::Text | QIODevice::WriteOnly | QIODevice::Truncate))
         return false;
     QTextStream fstream(&file);
