@@ -104,7 +104,7 @@ void Category::Delete(Node* parentFolder, QString name, int type)
         while(temp->nextBrother != thisF)
             temp = temp->nextBrother;
 
-        temp->nextBrother = thisF;
+        temp->nextBrother = thisF->nextBrother;
     }
 
     if(type == FOLDER) FreeCategory(thisF->firstChild);

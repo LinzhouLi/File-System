@@ -52,6 +52,17 @@
 ```
 D:.
 │  README.md
+├─images ——README图片
+│      addNewFile.png
+│      deleteFolder.png
+│      format.png
+│      MainWindow.png
+│      OpneFile.png
+│      sameFileName.png
+│      SaveFile.png
+│      saveLog.png
+│      switchFile.png
+│      WhiteSpace.png
 │
 └─src
     │  Category.cpp ——Category目录类实现
@@ -71,7 +82,7 @@ D:.
     │  VirtualDisk.cpp ——VirtualDisk模拟磁盘类实现
     │  VirtualDisk.h
     │
-    ├─images ——图片资源文件
+    ├─images ——项目图片资源文件
     │      editor.ico
     │      file.ico
     │      folder.ico
@@ -82,4 +93,64 @@ D:.
             Category.json
             Disk.json
 ```
+
+## 操作说明
+
+### 主界面
+
+<img src = "images\MainWindow.png" width = 600>
+
+### 打开文件
+
+- 在右侧文件列表中，双击某文件。
+- 右键选中某文件，弹出菜单，并选择`Open`。
+
+<img src = "images\OpneFile.png" width = 600>
+
+### 保存已编辑文件
+
+点击文件编辑页面右上角"X"，并选择是否`Save file`。
+
+<img src="images\SaveFile.png" width=600>
+
+### 新建文件或文件夹
+
+- 在右侧文件列表空白处（如下图红框所示），鼠标右键打开菜单，并选择`Add new file`或`Add new folder`。
+
+- 在左侧文件目录树中，选中某级文件夹后鼠标右键打开菜单，选择`Add new folder`（此方式仅能新建文件夹）。
+
+  <img src="images\WhiteSpace.png" width=400>
+
+**注意：同一目录下，文件夹或文件不能重名！**
+
+<img src="images\addNewFile.png" width=600>
+
+<img src = "images\sameFileName.png" width = 600>
+
+### 打开文件夹
+
+- 在右侧文件列表中，双击某文件夹，实现跳转。
+- 在左侧文件目录树中，双击某文件夹，实现跳转。
+- 在左侧文件目录树中，左键选中某文件夹，弹出菜单，选择`Open`。
+- 右上方点击`Back`按钮，可实现跳转至上一级文件夹。
+
+<img src = "images\switchFile.png" width = 600>
+
+### 删除文件或文件夹
+
+在右侧文件目录列表中右键某文件或文件夹，弹出菜单，选择`Delete`。
+
+<img src = "images\deleteFolder.png" width = 600>
+
+### 格式化
+
+在右侧文件目录列表空白处右键，弹出菜单，选择`Format`。
+
+<img src = "images\format.png" width = 600>
+
+### 保存到日志文件
+
+点击右上角主界面的"X"，弹出对话框，选择`Yes`。
+
+<img src = "images\saveLog.png" width = 600>
 
