@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>log/BitMapLog.txt</file>
-        <file>log/CategoryLog.json</file>
-        <file>log/DiskLog.txt</file>
-    </qresource>
-</RCC>

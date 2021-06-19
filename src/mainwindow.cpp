@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QPalette>
 #include <QStack>
 #include <QMessageBox>
 #include <QInputDialog>

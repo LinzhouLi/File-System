@@ -1,0 +1,71 @@
+{
+    "Category": [
+        {
+            "fileName": "New File",
+            "lastModify": "2021.06.19 18:49",
+            "size": 4,
+            "sons": null,
+            "startBlock": 0,
+            "type": 0
+        },
+        {
+            "fileName": "New File1",
+            "lastModify": "2021.06.19 18:49",
+            "size": 4,
+            "sons": null,
+            "startBlock": 1,
+            "type": 0
+        },
+        {
+            "fileName": "New File2",
+            "lastModify": "2021.06.19 18:49",
+            "size": 4,
+            "sons": null,
+            "startBlock": 2,
+            "type": 0
+        },
+        {
+            "fileName": "New Folder",
+            "lastModify": "2021.06.19 18:50",
+            "size": 0,
+            "sons": [
+                {
+                    "fileName": "New Folder",
+                    "lastModify": "2021.06.19 18:50",
+                    "size": 0,
+                    "sons": [
+                        {
+                            "fileName": "1234",
+                            "lastModify": "2021.06.19 18:51",
+                            "size": 3,
+                            "sons": null,
+                            "startBlock": 3,
+                            "type": 0
+                        },
+                        {
+                            "fileName": "2345",
+                            "lastModify": "2021.06.19 18:51",
+                            "size": 0,
+                            "sons": [
+                                {
+                                    "fileName": "5678",
+                                    "lastModify": "2021.06.19 18:51",
+                                    "size": 10,
+                                    "sons": null,
+                                    "startBlock": 4,
+                                    "type": 0
+                                }
+                            ],
+                            "startBlock": -1,
+                            "type": 1
+                        }
+                    ],
+                    "startBlock": -1,
+                    "type": 1
+                }
+            ],
+            "startBlock": -1,
+            "type": 1
+        }
+    ]
+}
