@@ -47,6 +47,7 @@ private:
     void _UpdateTreeWidget(Node* node, QTreeWidgetItem* item);
 
     void Create(Node* parentFolder, int type);
+    void OpenEditor(QString fileName);
 
     Ui::MainWindow *ui;
 

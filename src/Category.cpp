@@ -188,10 +188,10 @@ void Category::_ReadLog(Node* parentNode, QJsonArray* brothers)
         // brotherNode
         if(i == 0) // 第一个结点
             parentNode->firstChild = newNode; // 设置父结点的第一个child
-        else if(i == brotherNum - 1) // 最后一个结点
-            newNode->nextBrother = nullptr; // brotherNode为空
         else // 其他结点
             brotherNode->nextBrother = newNode; // 上一个结点的brotherNode为此结点
+        if(i == brotherNum - 1) // 最后一个结点
+            newNode->nextBrother = nullptr; // brotherNode为空
         brotherNode = newNode;
         // parentNode
         newNode->parent = parentNode;

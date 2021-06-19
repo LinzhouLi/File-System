@@ -6,8 +6,6 @@
 #include <QInputDialog>
 #include <QDir>
 
-#include <QDebug>
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -128,7 +126,7 @@ void MainWindow::InitTableWidget()
     connect(addNewFolder, &QAction::triggered, this, &MainWindow::CreateFolder);
     connect(format, &QAction::triggered, this, &MainWindow::Format);
     // 设置打开文件槽函数
-    connect(openF, &QAction::triggered, this, [=](){
+    connect(openF, &QAction::triggered, this, [=](){//
         auto items = ui->tableWidget->selectedItems();
         OpenItemInTable(items.at(0)->row()); // 打开文件相当于双击
     });
@@ -143,7 +141,7 @@ void MainWindow::InitTableWidget()
     UpdateTableWidget();
 
     // 响应双击,打开文件或目录
-    connect(ui->tableWidget, SIGNAL(cellDoubleClicked(int,int)), this, SLOT(OpenItemInTable(int)));
+    connect(ui->tableWidget, SIGNAL(cellDoubleClicked(int,int)), this, SLOT(OpenItemInTable(int)));//
 }
 
 void MainWindow::BackFolder()
@@ -414,6 +412,7 @@ void MainWindow::Create(Node *parentFolder, int type)
     }
     else // 新建TXT文件
     {
+
         QString text = "";
         TextEditWindow editor(this, name, &text); // 新建文件编辑器窗口
         editor.show();
@@ -430,9 +429,7 @@ void MainWindow::Create(Node *parentFolder, int type)
             delete fcb;
         }
         else // 成功新建TXT
-        {
             category->Create(parentFolder, fcb);
-        }
     }
 }
 

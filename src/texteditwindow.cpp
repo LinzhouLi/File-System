@@ -9,6 +9,8 @@ TextEditWindow::TextEditWindow(QWidget *parent, QString name, QString* str) :
     ui->setupUi(this);
 
     this->setWindowTitle(name);
+    this->setWindowIcon(QIcon(":/images/editor.ico"));
+
     this->content = str;
     this->text = *str;
 

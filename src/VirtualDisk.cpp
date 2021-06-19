@@ -62,8 +62,10 @@ bool VirtualDisk::AllocMem(FCB* fcb, const QString& content)
         }
 
         // 找到后续存放的位置
-        for(j = 1, i++; i < blockNum && j < blocks; i++)
+        for(j = 1, i++; j < blocks; i++)
         {
+            if(i == blockNum)
+                return false;
             if(bitMap[i] == EMPTY)
             {
                 remainBlock--;
