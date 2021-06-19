@@ -36,6 +36,21 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete rootItem;
+    delete tableMenu;
+    delete tableItemMenu;
+    delete treeItemMenu;
+    delete addNewFile;
+    delete addNewFolder;
+    delete openF;
+    delete deleteF;
+    delete format;
+    delete openFolderInTree;
+    delete addFolderInTree;
+
+    delete category; // 注意析构顺序
+    delete disk;
+    delete rootFolder;
 }
 
 void MainWindow::InitTreeWidget()

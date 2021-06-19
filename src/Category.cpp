@@ -25,6 +25,16 @@ Category::Category(Node* root, VirtualDisk* disk)
     this->disk = disk;
 }
 
+Category::~Category()
+{
+    int i;
+    for(i = 0; i < arrStack.size(); i++)
+        delete arrStack[i];
+    for(i = 0; i < objStack.size(); i++)
+        delete objStack[i];
+    Format();
+}
+
 void Category::FreeCategory(Node* node)
 {
     if(node == nullptr) return;
